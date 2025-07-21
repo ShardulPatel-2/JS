@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing page</title>
+    </head>
+    <style>
+        body {
+            text-allign: center;
+             }
+
+             nav { 
+                background-color: #444;
+                padding: 10px;
+             }
+             ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+             }
+                li {
+                    float: left;
+                }
+                
+                li a {
+                    display: block;
+                }
+
+                li a:hover {
+                    background-color: rgb(210, 230, 150);
+                }
+    </style>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h2>Intresting Information</h2>
+        <img src="sigma.webp" />
+        <br>
+        <button onclick="lion()">Read more</button>
+        <p id="lion-info"></p>
+        <img src="chigma.webp" />
+        <br>
+        <button onclick="tiger()">Read more</button>
+        <p id="tiger-info"></p>
+        <srcipt>
+            
+            function lion() {
+                document.getElementById("lion-info").innerHTML = "Lions (panthera leo) is a member of the feldiea.";
+            }
+
+            function tiger() {
+                document.getElementById("tiger-info").innerHTML = "Tiger (panthere tigris) is the largest extant cat speacies.";
+            }
+        </srcipt>
+    </body>
+</html>
